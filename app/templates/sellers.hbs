@@ -1,1 +1,9 @@
 {{add-seller seller=model.sellers saveSeller="saveSeller"}}
+
+<ul>
+  {{#each model.sellers as |seller|}}
+    {{list-sellers seller=seller}}
+  {{/each}}
+</ul>
+
+{{outlet}}

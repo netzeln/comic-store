@@ -1,3 +1,4 @@
+{{#if newSellerForm}}
 <form>
   <div class="form-group">
     <label for="name">Seller Name</label>
@@ -7,5 +8,8 @@
     <label for="city">Seller City</label>
     {{input value=city id='city'}}
   </div>
-  <button {{action 'saveSeller' seller}}> Add Seller </button>
+  <button {{action 'saveSeller' seller}}>Save Seller</button>
 </form>
+{{else}}
+<button {{action 'sellerFormShow'}}>New Seller</button>
+{{/if}}
