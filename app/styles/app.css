@@ -1,7 +1,17 @@
 .comic-thumb{
-  background-color: grey;
+  background-color: lightgrey;
   min-width: 200px;
+  margin: 10px;
 }
 .comic-thumb, img {
   max-width: 150px;
+}
+
+.breadcrumb {
+  background-color: white;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
 }
