@@ -1,0 +1,11 @@
+<form>
+  <div class="form-group">
+    <label for="name">Seller Name</label>
+    {{input value=name id='name'}}
+  </div>
+  <div class="form-group">
+    <label for="city">Seller City</label>
+    {{input value=city id='city'}}
+  </div>
+  <button {{action 'saveSeller' seller}}> Add Seller </button>
+</form>

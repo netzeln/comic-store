@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('comic', {path: '/comic/:comic_id'});
   this.route('cart');
+  this.route('sellers');
 });
 
 export default Router;
