@@ -1,9 +1,11 @@
 .comic-thumb{
   background-color: lightgrey;
-  min-width: 200px;
+  width: 250px;
   margin: 10px;
 }
-.comic-thumb, img {
+
+.thumb{
+  align-items: center;
   max-width: 150px;
 }
 
@@ -24,5 +26,5 @@ h3 {
 
 .profile {
   height: 500px;
-  width: 500px;
+
 }
