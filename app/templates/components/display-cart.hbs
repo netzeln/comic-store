@@ -1,3 +1,4 @@
 {{#each shoppingCart.items as |comic|}}
   <h2>{{comic.series}} #{{comic.issueNo}} -- ${{comic.price}}</h2>
+  <button class="btn btn-danger" {{action "remove" comic}}>Remove From Cart</button>
 {{/each}}
