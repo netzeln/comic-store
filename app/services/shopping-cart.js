@@ -11,6 +11,9 @@ export default Ember.Service.extend({
   },
   empty(){
     this.get('items').setObjects([]);
+  },
+  includes(item){
+    return this.get('items').includes(item);
   }
 
 });

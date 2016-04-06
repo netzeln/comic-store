@@ -11,5 +11,9 @@
 
 <div class="col-md-6">
   <img class="profile" src={{comic.image}}><br>
+  {{#if comic.inCart}}
+  <button class="btn btn-danger" {{action 'remove' comic}}>Remove from Cart</button>
+  {{else}}
   <button class="btn btn-success" {{action 'addToCart' comic}}>BUY: ($ {{comic.price}})</button>
+  {{/if}}
 </div>

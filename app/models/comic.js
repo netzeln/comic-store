@@ -13,5 +13,10 @@ export default DS.Model.extend({
   price: DS.attr(),
   condition: DS.attr(),
   category: DS.attr(),
-  image: DS.attr()
+  image: DS.attr(),
+
+  shoppingCart: Ember.inject.service(),
+  inCart: Ember.computed('shoppingCart.items.[]', function(){
+    return this.get('shoppingCart').includes(this)
+  })
 });
