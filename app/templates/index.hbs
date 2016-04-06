@@ -1,1 +1,5 @@
-{{outlet}}
+<h1>ComicSwap</h1>
+
+{{#each model.comics as |comic|}}
+  {{comic-thumbnail comic=comic}}
+{{/each}}

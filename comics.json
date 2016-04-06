@@ -1,0 +1,53 @@
+{ "comics": [{
+  "id": 1,
+  "series": "The Walking Dead",
+  "writer": "Robert Kirkman",
+  "artist": "Charlie Adlard",
+  "seller": "Nic Netzel",
+  "description": "Cover H Incentive Retailer Appreciation Variant Cover",
+  "issueNo": "150",
+  "year": "2016",
+  "publisher": "Image",
+  "price": 425,
+  "condition": "NM",
+  "category": "Zombie/Indie",
+  "image": "http://www.midtowncomics.com/images/product/xl/1513148_xl.jpg"
+}, {  "id": 2,
+  "series": "Action Comics",
+  "writer": "Jerry Siegel",
+  "artist": "Joe Shuster",
+  "seller": "Yvonna Contreras",
+  "description": "Contains first appearance of Superman",
+  "issueNo": "1",
+  "year": "1937",
+  "publisher": "DC",
+  "price": 1000000,
+  "condition": "VG",
+  "category": "Superhero",
+  "image": "https://en.wikipedia.org/wiki/Action_Comics_1#/media/File:Action_Comics_1.jpg"
+
+},
+{  "id": 3,
+  "series": "Starman",
+  "writer": "James Robinson",
+  "artist": "Peter Snejberg",
+  "seller": "Nic Netzel",
+  "description": "Grand Guingol, part 2",
+  "issueNo": "63",
+  "year": "2000",
+  "publisher": "DC",
+  "price": 2.50,
+  "condition": "VF",
+  "category": "Superhero",
+  "image": "http://vignette2.wikia.nocookie.net/marvel_dc/images/4/41/Starman_Vol_2_63.jpg/revision/latest/scale-to-width-down/300?cb=20090110223427"
+
+}
+  ],
+
+"sellers" : [{
+  "name" : "Nic Netzel",
+  "city" : "Portland,OR"
+  }]
+
+
+}
