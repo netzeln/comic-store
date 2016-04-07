@@ -2,17 +2,16 @@
 
   <div class="row">
     <div class="col-sm-6">
-      {{add-seller seller=model.sellers saveSeller="saveSeller"}}
 
-      <ul>
+      <ul style="list-style-type:circle">
         {{#each model.sellers as |seller|}}
-        {{list-sellers seller=seller}}
+        <li>{{list-sellers seller=seller}}</li>
         {{/each}}
       </ul>
     </div>
     <div class="col-sm-6">
       {{outlet}}
-
     </div>
   </div>
+  {{add-seller seller=model.sellers saveSeller="saveSeller"}}
 </div>

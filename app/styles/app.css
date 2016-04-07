@@ -4,6 +4,12 @@
   margin: 10px;
 }
 
+
+.hand {
+  width: 490px;
+  height: 600px;
+  align-items: center;
+}
 .thumb{
   align-items: center;
   max-width: 150px;
@@ -22,8 +28,11 @@
 .background {
   width: 100vw;
   height: 100vh;
-  background-image: url('http://img.scoop.it/ISZyfhjW9URVvrFFoCiOCIXXXL4j3HpexhjNOf_P3YmryPKwJ94QGRtDb3Sbc6KY');
-  background-size: cover;
+  position: fixed;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url('/assets/images/indexZombie.jpg');
+  background-repeat: no-repeat;
 }
 h1 {
   text-align: center;

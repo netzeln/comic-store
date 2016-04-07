@@ -8,8 +8,8 @@
     <label for="city">Seller City</label>
     {{input value=city id='city'}}
   </div>
-  <button {{action 'saveSeller' seller}}>Save Seller</button>
+  <button class="btn btn-success" {{action 'saveSeller' seller}}>Save Seller</button>
 </form>
 {{else}}
-<button {{action 'sellerFormShow'}}>New Seller</button>
+<button class="btn btn-primary" {{action 'sellerFormShow'}}>New Seller</button>
 {{/if}}

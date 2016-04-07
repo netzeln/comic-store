@@ -1,54 +1,58 @@
-<h1>Edit Details of This Listing</h1>
-<h3>{{comic.name}}</h3>
-<img class="thumb" src={{comic.image}}>
+<div class="container">
+  <h1>Edit Details of This Listing</h1>
+  <h3>{{comic.name}}</h3>
+  <img class="thumb" src={{comic.image}}>
 
-<form>
-  <div class="form-group">
-    <label for="series">Comic Series</label>
-    {{input value=series id="series" placeholder=comic.series}}
-  </div>
-  <div class="form-group">
-    <label for="issueNo">Issue #</label>
-    {{input value=issueNo id="issueNo" placeholder=comic.issueNo}}
-  </div>
-  <div class="form-group">
-    <label for="writer">Writer</label>
-    {{input value=writer id="writer" placeholder=comic.writer}}
-  </div>
-  <div class="form-group">
-    <label for="artist">Artist</label>
-    {{input value=artist id="artist" placeholder=comic.artist}}
-  </div>
-  <div class="form-group">
-    <label for="year">Year</label>
-    {{input value=year id="year" placeholder=comic.year}}
-  </div>
-  <div class="form-group">
-    <label for="publisher">Publisher</label>
-    {{input value=publisher id="publisher" placeholder=comic.publisher}}
-  </div>
-  <div class="form-group">
-    <label for="category">Category</label>
-    {{input value=category id="category" placeholder=comic.category}}
-  </div>
-  <div class="form-group">
-    <label for="description">Description of Issue</label>
-    {{textarea rows="5" value=description id="description" placeholder=comic.description}}
-  </div>
-  <div class="form-group">
-    <label for="image">Link to Cover Image</label>
-    {{input type="url" value=image id="image" placeholder=comic.image}}
-  </div>
-  <div class="price-condition container">
+  <form>
     <div class="form-group">
-      <label for="price">Selling Price:</label>
-      {{input type="number" step="any" min="0" value=price id="price" placeholder=comic.price}}
+      <label for="series">Comic Series</label>
+      {{input value=series id="series" placeholder=comic.series}}
     </div>
     <div class="form-group">
-      <label for="condition">Condition</label>
-      {{input value=condition id="condition" placeholder=comic.condition}}
+      <label for="issueNo">Issue #</label>
+      {{input value=issueNo id="issueNo" placeholder=comic.issueNo}}
     </div>
-    <button class="btn btn-warning" {{action 'updateComic' comic}}>Save</button>
-  </div>
-</form>
-<button class="btn btn-danger" {{action 'destroyComic' comic}}>Delete</button>
+    <div class="form-group">
+      <label for="writer">Writer</label>
+      {{input value=writer id="writer" placeholder=comic.writer}}
+    </div>
+    <div class="form-group">
+      <label for="artist">Artist</label>
+      {{input value=artist id="artist" placeholder=comic.artist}}
+    </div>
+    <div class="form-group">
+      <label for="year">Year</label>
+      {{input value=year id="year" placeholder=comic.year}}
+    </div>
+    <div class="form-group">
+      <label for="publisher">Publisher</label>
+      {{input value=publisher id="publisher" placeholder=comic.publisher}}
+    </div>
+    <div class="form-group">
+      <label for="category">Category</label>
+      {{input value=category id="category" placeholder=comic.category}}
+    </div>
+    <div class="form-group">
+      <label for="description">Description of Issue</label>
+      {{textarea rows="5" value=description id="description" placeholder=comic.description}}
+    </div>
+    <div class="form-group">
+      <label for="image">Link to Cover Image</label>
+      {{input type="url" value=image id="image" placeholder=comic.image}}
+    </div>
+    <div class="price-condition container">
+      <div class="form-group">
+        <label for="price">Selling Price:</label>
+        {{input type="number" step="any" min="0" value=price id="price" placeholder=comic.price}}
+      </div>
+      <div class="form-group">
+        <label for="condition">Condition</label>
+        {{input value=condition id="condition" placeholder=comic.condition}}
+      </div>
+      <button class="btn btn-warning" {{action 'updateComic' comic}}>Save</button>
+    </div>
+  </form>
+  <br>
+  <br>
+  <button class="btn btn-danger" {{action 'destroyComic' comic}}>Delete</button>
+</div>
