@@ -1,6 +1,8 @@
-<div class="row">
-  <div class="col-sm-6">
-    {{add-seller seller=model.sellers saveSeller="saveSeller"}}
+<div class="container">
+
+  <div class="row">
+    <div class="col-sm-6">
+      {{add-seller seller=model.sellers saveSeller="saveSeller"}}
 
       <ul>
         {{#each model.sellers as |seller|}}
@@ -12,4 +14,5 @@
       {{outlet}}
 
     </div>
+  </div>
 </div>

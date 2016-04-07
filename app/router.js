@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('list-comics');
   this.route('edit-comic', { path: '/edit-comic/:comic_id'});
   this.route('about');
+  this.route('marketplace');
 });
 
 export default Router;

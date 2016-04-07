@@ -8,7 +8,7 @@ export default Ember.Component.extend({
     var total = 0;
 
     items.forEach(function(item){
-      total = total + item.get('price');
+      total = total + parseFloat(item.get('price'));
     });
 
     if(total){

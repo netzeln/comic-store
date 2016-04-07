@@ -18,6 +18,13 @@
   border-radius: 5px;
   max-width: 100%;
 }
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('http://img.scoop.it/ISZyfhjW9URVvrFFoCiOCIXXXL4j3HpexhjNOf_P3YmryPKwJ94QGRtDb3Sbc6KY');
+  background-size: cover;
+}
 h1 {
   text-align: center;
   font-weight: normal;
