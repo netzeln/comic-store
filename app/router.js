@@ -9,7 +9,7 @@ Router.map(function() {
   this.route('comic', {path: '/comic/:comic_id'});
   this.route('cart');
   this.route('sellers', function(){
-    this.route('sellerInfo', {path: '/:seller_id'});
+    this.route('info', { path: '/:seller_id' });
   });
 });
 

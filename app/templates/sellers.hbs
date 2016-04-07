@@ -1,9 +1,15 @@
-{{add-seller seller=model.sellers saveSeller="saveSeller"}}
+<div class="row">
+  <div class="col-sm-6">
+    {{add-seller seller=model.sellers saveSeller="saveSeller"}}
 
-<ul>
-  {{#each model.sellers as |seller|}}
-    {{list-sellers seller=seller}}
-  {{/each}}
-</ul>
+      <ul>
+        {{#each model.sellers as |seller|}}
+        {{list-sellers seller=seller}}
+        {{/each}}
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      {{outlet}}
 
-{{outlet}}
+    </div>
+</div>

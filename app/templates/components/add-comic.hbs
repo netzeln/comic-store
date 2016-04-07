@@ -1,0 +1,51 @@
+
+<form>
+  <div class="form-group">
+    <label for="series">Comic Series</label>
+    {{input value=series id="series"}}
+  </div>
+  <div class="form-group">
+    <label for="issueNo">Issue #</label>
+    {{input value=issueNo id="issueNo"}}
+  </div>
+  <div class="form-group">
+    <label for="writer">Writer</label>
+    {{input value=writer id="writer"}}
+  </div>
+  <div class="form-group">
+    <label for="artist">Artist</label>
+    {{input value=artist id="artist"}}
+  </div>
+  <div class="form-group">
+    <label for="year">Year</label>
+    {{input value=year id="year"}}
+  </div>
+  <div class="form-group">
+    <label for="publisher">Publisher</label>
+    {{input value=publisher id="publisher"}}
+  </div>
+  <div class="form-group">
+    <label for="category">Category</label>
+    {{input value=category id="category"}}
+  </div>
+  <div class="form-group">
+    <label for="description">Description of Issue</label>
+    {{textarea rows="5" value=description id="description"}}
+  </div>
+  <div class="form-group">
+    <label for="image">Link to Cover Image</label>
+    {{input type="url" value=image id="image"}}
+  </div>
+  <div class="price-condition container">
+    <div class="form-group">
+      <label for="price">Selling Price:</label>
+      {{input type="number" value=price id="price"}}
+    </div>
+    <div class="form-group">
+      <label for="condition">Condition</label>
+      {{input value=condition id="condition"}}
+    </div>
+
+  </div>
+
+</form>

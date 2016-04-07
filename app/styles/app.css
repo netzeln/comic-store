@@ -13,7 +13,11 @@
   background-color: white;
   text-align: center;
 }
-
+.price-condition {
+  background-color: lightgrey;
+  border-radius: 5px;
+  max-width: 100%;
+}
 h1 {
   text-align: center;
   font-weight: normal;
