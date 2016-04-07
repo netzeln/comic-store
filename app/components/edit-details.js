@@ -18,6 +18,9 @@ export default Ember.Component.extend({
         seller: this.get('seller'),
       };
       this.sendAction('updateComic', comic, params);
+    },
+    destroyComic(comic){
+      this.sendAction('destroyComic', comic);
     }
   }
 });

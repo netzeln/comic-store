@@ -14,6 +14,10 @@ export default Ember.Route.extend({
       });
       comic.save();
       this.transitionTo('index');
+    },
+    destroyComic(comic){
+      comic.destroyRecord();
+      this.transitionTo('index');
     }
   }
 });
