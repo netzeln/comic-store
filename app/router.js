@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('sellers', function(){
     this.route('info', { path: '/:seller_id' });
   });
+  this.route('list-comics');
 });
 
 export default Router;

@@ -15,5 +15,16 @@ export default Ember.Route.extend({
       this.transitionTo('sellers');
 
     }
+    // actions: {
+    //   saveComic(params){
+    //     var newComic = this.store.createRecord('comic', params);
+    //     var seller = params.seller;
+    //     console.log(seller);
+    //     seller.get('comics').addObject(newComic);
+    //     newComic.save().then(function(){
+    //       return seller.save();
+    //     });
+    //     this.transitionTo('info', params.seller);
+    //   }
   }
 });

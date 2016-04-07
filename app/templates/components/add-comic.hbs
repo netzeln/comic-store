@@ -1,4 +1,4 @@
-
+{{#if addNewComic}}
 <form>
   <div class="form-group">
     <label for="series">Comic Series</label>
@@ -45,7 +45,9 @@
       <label for="condition">Condition</label>
       {{input value=condition id="condition"}}
     </div>
-
+    <button class="btn btn-primary" {{action 'saveComic' }}>Add</button>
   </div>
-
 </form>
+{{else}}
+  <button class="btn btn-primary" {{action 'newComicForm' }}>New Comic</button>
+{{/if}}
