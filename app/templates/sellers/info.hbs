@@ -1,6 +1,6 @@
 
 <h2>{{model.seller.name}}</h2>
 {{#each model.seller.comics as |comic|}}
-{{comic-thumbnail comic=comic}}
+{{list-sellercomics comic=comic}}
 {{/each}}
 {{add-comic seller=model.seller saveComic="saveComic" deleteComic="deleteComic"}}
