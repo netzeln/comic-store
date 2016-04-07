@@ -4,7 +4,10 @@
   margin: 10px;
 }
 
-
+input {
+  border: none;
+  border-bottom: 1px solid black;
+}
 .hand {
   width: 490px;
   height: 600px;
